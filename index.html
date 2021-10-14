@@ -16,6 +16,8 @@
     
     <!--[if (gt IE 9)|!(IE)]><!--><link href="static/css/main.css" rel="stylesheet" type="text/css"><!--<![endif]-->
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
         <meta property="og:title" content="" />
         <meta property="og:url" content="" />
         <meta property="og:description" content="" />
@@ -44,16 +46,16 @@
         </a>
     
         <div class="menu header_menu">
-          <a class="menu_item _active" href="#">Возможности</a>
-          <a class="menu_item" href="#">Зарабатывайте с Petmart</a>
-          <a class="menu_item" href="#">Помощь проекту</a>
-          <a class="menu_item" href="#">Контакты</a>
+          <a class="menu_item _active" href="#feats">Возможности</a>
+          <a class="menu_item" href="#join">Зарабатывайте с Petmart</a>
+          <a class="menu_item" data-fancybox href="#popup-2">Помощь проекту</a>
+          <a class="menu_item" href="#contacts">Контакты</a>
         </div>
       </div>
     </header>
     
 
-    <div class="welcome">
+    <div class="welcome" id="welcome">
       
       <div class="wrap">
         
@@ -65,7 +67,7 @@
             <p>Лучший в мире маркетплейс для владельцев домашних питомцев находиться в разработке и будет запущен <b>30.11.2021</b> совместно с приложением</p>
           </div>
     
-          <a href="#" class="welcome_button button">Узнать больше</a>
+          <a href="#popup-3" data-fancybox class="welcome_button button">Узнать больше</a>
         </div>
     
         <div class="welcome_imgs">
@@ -82,7 +84,7 @@
     </div>
     
 
-    <div class="feats wrap">
+    <div class="feats wrap" id="feats">
       
       <h2 class="h2 feats_h2">Petmart обьединил в себе:</h2>
     
@@ -166,7 +168,7 @@
       <img class="banner_img _phone" src="static/img/content/banner-phone.png" alt="">
     </div>
 
-    <div class="join wrap">
+    <div class="join wrap" id="join">
     
       <h2 class="h2 join_h2">Присоединяйтесь к нам!</h2>
     
@@ -184,7 +186,7 @@
               <p>Если ваш бизнес связан с услугами или товарами для домашних животных, оставляйте заявку и мы обязательно разместим вас на нашей площадке!</p>
             </div>
     
-            <a href="#" class="join-item_button button">Оставить заявку</a>
+            <a href="#popup-1" data-fancybox class="join-item_button button">Оставить заявку</a>
           </div>
         </div>
         <div class="join-item">
@@ -199,14 +201,14 @@
               <p>Мы ищем первых, активных пользователей, которые помогут нам довести наш продукт до идеала, если вы хотите присоедениться к команде <b>petmart.su</b> или просто помочь проекту, оставляете заявку</p>
             </div>
     
-            <a href="#" class="join-item_button button">Оставить заявку</a>
+            <a href="#popup-1" data-fancybox class="join-item_button button">Оставить заявку</a>
           </div>
         </div>
       </div>
     </div>
     
 
-    <div class="contacts wrap">
+    <div class="contacts wrap" id="contacts">
       
       <div class="contacts_content">
         
@@ -227,7 +229,7 @@
           <p><b>Фактический адрес:</b> г. Москва, Воронцовские пруды д.3, офис 18</p>
         </div>
     
-        <a href="" class="contacts_button button">Узнать первым о старте</a>
+        <a href="#popup-3" data-fancybox class="contacts_button button">Узнать первым о старте</a>
       </div>
     
       <div class="contacts_doggo"><img src="static/img/content/contacts-doggo.png" alt=""></div>
@@ -254,11 +256,126 @@
     </footer>
     
 
+    <div class="popups">
+      
+      <div class="popup" id="popup-1">
+
+        <div class="popup_header">
+
+          <span class="popup_title">Оставьте заявку для размещения <br>на нашей площадке</span>
+
+          <span class="popup_subtitle">Мы свяжемся с вами как можно скорее!</span>
+
+          <a href="#" class="popup_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g><g><path fill="#301d28" d="M16.841 19L9.862 11.98 3 18.84a1.523 1.523 0 0 1-2.159 0 1.523 1.523 0 0 1 0-2.158l6.863-6.82L1 3.158A1.523 1.523 0 0 1 1 1a1.523 1.523 0 0 1 2.158 0l6.694 6.693L16.693.852a1.523 1.523 0 0 1 2.159 0 1.523 1.523 0 0 1 0 2.158L12.01 9.852l6.99 6.99A1.523 1.523 0 0 1 19 19a1.528 1.528 0 0 1-2.159 0z"/></g></g></svg>
+          </a>
+        </div>
+
+        <form action="#" class="popup_form popup-form">
+
+          <div class="popup-form_input-container">
+            <span class="popup-form_hidden-text">Упс, вы забыли заполнить значимое поле!</span>
+            <input name="name" placeholder="Ваше имя" type="text" class="popup-form_input">
+          </div>
+
+          <div class="popup-form_input-container">
+            <input name="email" placeholder="Ваша почта" type="text" class="popup-form_input">
+          </div>
+
+          <div class="popup-form_input-container">
+            <input name="phone" placeholder="И номер телефона" type="text" class="popup-form_input">
+          </div>
+
+          <div class="popup-form_input-container">
+            <textarea name="comment" placeholder="Ваш комментарий" class="popup-form_textarea"></textarea>
+          </div>
+            
+          <div class="popup-form_input-container">
+            <input id="agree" hidden="" type="checkbox" class="popup-form_checkbox">
+            <label for="agree" class="popup-form_label">Нам важно знать, что вы согласны на обработку ваших персональных данных</label>
+          </div>
+
+          <a href="" class="popup-form_submit button">Отправить</a>
+        </form>
+      </div>
+
+      <div class="popup" id="popup-2">
+
+        <div class="popup_header">
+
+          <span class="popup_title">Оставьте заявку, если хотите <br>поделиться с нами идеями</span>
+
+          <span class="popup_subtitle">Мы свяжемся с вами как можно скорее!</span>
+
+          <a href="#" class="popup_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g><g><path fill="#301d28" d="M16.841 19L9.862 11.98 3 18.84a1.523 1.523 0 0 1-2.159 0 1.523 1.523 0 0 1 0-2.158l6.863-6.82L1 3.158A1.523 1.523 0 0 1 1 1a1.523 1.523 0 0 1 2.158 0l6.694 6.693L16.693.852a1.523 1.523 0 0 1 2.159 0 1.523 1.523 0 0 1 0 2.158L12.01 9.852l6.99 6.99A1.523 1.523 0 0 1 19 19a1.528 1.528 0 0 1-2.159 0z"/></g></g></svg>
+          </a>
+        </div>
+
+        <form action="#" class="popup_form popup-form">
+
+          <div class="popup-form_input-container">
+            <span class="popup-form_hidden-text">Упс, вы забыли заполнить значимое поле!</span>
+            <input name="name" placeholder="Ваше имя" type="text" class="popup-form_input">
+          </div>
+
+          <div class="popup-form_input-container">
+            <input name="email" placeholder="Ваша почта" type="text" class="popup-form_input">
+          </div>
+
+          <div class="popup-form_input-container">
+            <input name="phone" placeholder="И номер телефона" type="text" class="popup-form_input">
+          </div>
+
+          <div class="popup-form_input-container">
+            <textarea name="comment" placeholder="Ваш комментарий" class="popup-form_textarea"></textarea>
+          </div>
+            
+          <div class="popup-form_input-container">
+            <input id="agree" hidden="" type="checkbox" class="popup-form_checkbox">
+            <label for="agree" class="popup-form_label">Нам важно знать, что вы согласны на обработку ваших персональных данных</label>
+          </div>
+
+          <a href="" class="popup-form_submit button">Отправить</a>
+        </form>
+      </div>
+
+      <div class="popup" id="popup-3">
+
+        <div class="popup_header">
+
+          <span class="popup_title">Оставьте данные для того, <br>чтобы первым узнать о нашем старте!</span>
+
+          <span class="popup_subtitle">Мы направим ссылку для быстрого вода на ваш электронный адрес</span>
+
+          <a href="#" class="popup_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g><g><path fill="#301d28" d="M16.841 19L9.862 11.98 3 18.84a1.523 1.523 0 0 1-2.159 0 1.523 1.523 0 0 1 0-2.158l6.863-6.82L1 3.158A1.523 1.523 0 0 1 1 1a1.523 1.523 0 0 1 2.158 0l6.694 6.693L16.693.852a1.523 1.523 0 0 1 2.159 0 1.523 1.523 0 0 1 0 2.158L12.01 9.852l6.99 6.99A1.523 1.523 0 0 1 19 19a1.528 1.528 0 0 1-2.159 0z"/></g></g></svg>
+          </a>
+        </div>
+
+        <form action="#" class="popup_form popup-form">
+
+          <div class="popup-form_input-container">
+            <span class="popup-form_hidden-text">Упс, вы забыли заполнить значимое поле!</span>
+            <input name="name" placeholder="Ваше имя" type="text" class="popup-form_input">
+          </div>
+
+          <div class="popup-form_input-container">
+            <input name="email" placeholder="Ваша почта" type="text" class="popup-form_input">
+          </div>
+
+          <a href="" class="popup-form_submit button">Отправить</a>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     
 
     <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
     <script src="static/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 
 </html>
