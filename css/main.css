@@ -343,8 +343,8 @@ template {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("Gilroy-Semibold.eot");
-  src: url("Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("Gilroy-Semibold.woff2") format("woff2"), url("Gilroy-Semibold.woff") format("woff"), url("Gilroy-Semibold.ttf") format("truetype"), url("Gilroy-Semibold.svg#Gilroy-Semibold") format("svg");
+  src: url("../fonts/Gilroy-Semibold.eot");
+  src: url("../fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype"), url("../fonts/Gilroy-Semibold.svg#Gilroy-Semibold") format("svg");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -352,8 +352,8 @@ template {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("Gilroy-Bold.eot");
-  src: url("Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("Gilroy-Bold.woff2") format("woff2"), url("Gilroy-Bold.woff") format("woff"), url("Gilroy-Bold.ttf") format("truetype"), url("Gilroy-Bold.svg#Gilroy-Bold") format("svg");
+  src: url("../fonts/Gilroy-Bold.eot");
+  src: url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype"), url("../fonts/Gilroy-Bold.svg#Gilroy-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -361,8 +361,8 @@ template {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("Gilroy-Heavy.eot");
-  src: url("Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("Gilroy-Heavy.woff2") format("woff2"), url("Gilroy-Heavy.woff") format("woff"), url("Gilroy-Heavy.ttf") format("truetype"), url("Gilroy-Heavy.svg#Gilroy-Heavy") format("svg");
+  src: url("../fonts/Gilroy-Heavy.eot");
+  src: url("../fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("truetype"), url("../fonts/Gilroy-Heavy.svg#Gilroy-Heavy") format("svg");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -370,8 +370,8 @@ template {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("Gilroy-Medium.eot");
-  src: url("Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("Gilroy-Medium.woff2") format("woff2"), url("Gilroy-Medium.woff") format("woff"), url("Gilroy-Medium.ttf") format("truetype"), url("Gilroy-Medium.svg#Gilroy-Medium") format("svg");
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype"), url("../fonts/Gilroy-Medium.svg#Gilroy-Medium") format("svg");
   font-weight: medium;
   font-style: normal;
   font-display: swap;
@@ -379,8 +379,8 @@ template {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("Gilroy-Regular.eot");
-  src: url("Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("Gilroy-Regular.woff2") format("woff2"), url("Gilroy-Regular.woff") format("woff"), url("Gilroy-Regular.ttf") format("truetype"), url("Gilroy-Regular.svg#Gilroy-Regular") format("svg");
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype"), url("../fonts/Gilroy-Regular.svg#Gilroy-Regular") format("svg");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -624,58 +624,6 @@ html, body {
 @media (max-width: 398px) {
   .h2 {
     font-size: 17px;
-  }
-}
-
-.banner {
-  top: -6px;
-  max-width: 100%;
-  max-height: 992px;
-}
-
-@media (max-width: 1095px) {
-  .banner {
-    overflow: hidden;
-  }
-}
-
-.banner_img {
-  display: block;
-  width: 100%;
-  max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (max-width: 1095px) {
-  .banner_img {
-    width: 130%;
-    margin-left: -13%;
-  }
-}
-
-@media (max-width: 767px) {
-  .banner_img {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .banner_img._desc {
-    display: none;
-  }
-}
-
-.banner_img._phone {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .banner_img._phone {
-    display: block;
-    width: 220%;
-    margin-left: -65%;
   }
 }
 
@@ -1213,6 +1161,58 @@ html, body {
   }
 }
 
+.banner {
+  top: -6px;
+  max-width: 100%;
+  max-height: 992px;
+}
+
+@media (max-width: 1095px) {
+  .banner {
+    overflow: hidden;
+  }
+}
+
+.banner_img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1095px) {
+  .banner_img {
+    width: 130%;
+    margin-left: -13%;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner_img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner_img._desc {
+    display: none;
+  }
+}
+
+.banner_img._phone {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .banner_img._phone {
+    display: block;
+    width: 220%;
+    margin-left: -65%;
+  }
+}
+
 .feats {
   max-width: 1310px;
 }
@@ -1429,253 +1429,6 @@ html, body {
 
 .header_menu {
   margin-top: 1px;
-}
-
-.welcome {
-  top: -62px;
-  padding-top: 111px;
-  background-image: url(../img/content/welcome-bg.png);
-  background-repeat: no-repeat;
-  background-position: 0;
-  background-size: cover;
-}
-
-@media (max-width: 767px) {
-  .welcome {
-    padding-top: 100px;
-    height: 480px;
-    overflow: hidden;
-    background-position: 80% 0;
-  }
-}
-
-@media (max-width: 398px) {
-  .welcome {
-    height: 400px;
-  }
-}
-
-.welcome .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-right: 32px;
-}
-
-.welcome_content {
-  max-width: 560px;
-  margin-top: 42px;
-  width: 100%;
-}
-
-@media (max-width: 1280px) {
-  .welcome_content {
-    max-width: 437px;
-  }
-}
-
-@media (max-width: 1095px) {
-  .welcome_content {
-    z-index: 10;
-    max-width: 381px;
-  }
-}
-
-@media (max-width: 767px) {
-  .welcome_content {
-    margin-top: 0;
-  }
-}
-
-.welcome_h2 {
-  margin-bottom: 26px;
-}
-
-@media (max-width: 1095px) {
-  .welcome_h2 {
-    margin-bottom: 15px;
-  }
-}
-
-.welcome_desc {
-  max-width: 520px;
-  width: 100%;
-  color: #301d28;
-  line-height: 23.8px;
-  font-size: 18px;
-}
-
-@media (max-width: 1280px) {
-  .welcome_desc {
-    max-width: 380px;
-    font-size: 14px;
-    line-height: 18.51px;
-  }
-}
-
-@media (max-width: 398px) {
-  .welcome_desc {
-    max-width: 284px;
-    font-size: 12px;
-    line-height: 15.2px;
-  }
-}
-
-.welcome_desc p {
-  margin: 0;
-}
-
-.welcome_desc b {
-  font-weight: 600;
-}
-
-.welcome_button {
-  margin-top: 37px;
-}
-
-@media (max-width: 1280px) {
-  .welcome_button {
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 1095px) {
-  .welcome_button {
-    margin-top: 25px;
-  }
-}
-
-@media (max-width: 398px) {
-  .welcome_button {
-    margin-top: 17px;
-  }
-}
-
-.welcome_imgs {
-  max-width: 597px;
-  width: 100%;
-  height: 530px;
-}
-
-@media (max-width: 1280px) {
-  .welcome_imgs {
-    max-width: 396px;
-    height: 352px;
-  }
-}
-
-@media (max-width: 1095px) {
-  .welcome_imgs {
-    position: absolute;
-    right: -20px;
-    max-width: 303px;
-    height: 309px;
-  }
-}
-
-@media (max-width: 767px) {
-  .welcome_imgs {
-    max-width: 300px;
-    height: 205px;
-  }
-}
-
-@media (max-width: 398px) {
-  .welcome_imgs {
-    max-width: 192px;
-    height: 143px;
-  }
-}
-
-.welcome_img {
-  max-width: 100%;
-}
-
-@media (max-width: 1095px) {
-  .welcome_img {
-    overflow: hidden;
-  }
-}
-
-.welcome_img img {
-  display: block;
-  max-width: 100%;
-}
-
-.welcome_img._ball {
-  position: absolute;
-  top: 18px;
-  left: -2px;
-}
-
-@media (max-width: 1280px) {
-  .welcome_img._ball {
-    width: 58px;
-    height: 59px;
-  }
-  .welcome_img._ball img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-  }
-}
-
-@media (max-width: 1095px) {
-  .welcome_img._ball {
-    left: 22px;
-    width: 45px;
-    height: 45px;
-  }
-}
-
-@media (max-width: 767px) {
-  .welcome_img._ball {
-    bottom: -53px;
-    top: auto;
-    left: -25px;
-    height: 41px;
-    width: 41px;
-  }
-}
-
-@media (max-width: 398px) {
-  .welcome_img._ball {
-    bottom: -55px;
-    left: -50px;
-    height: 25px;
-    width: 25px;
-  }
-}
-
-@media (max-width: 1095px) {
-  .welcome_img._doggo {
-    position: absolute;
-    top: 40px;
-    max-width: none;
-    width: 329px;
-    height: 285px;
-  }
-}
-
-@media (max-width: 767px) {
-  .welcome_img._doggo {
-    top: 100px;
-    right: -10px;
-    height: 283px;
-    width: 280px;
-  }
-}
-
-@media (max-width: 398px) {
-  .welcome_img._doggo {
-    top: 120px;
-    right: 10px;
-    height: 203px;
-    width: 200px;
-  }
 }
 
 .join {
@@ -1962,4 +1715,252 @@ html, body {
   }
 }
 
+.welcome {
+  top: -62px;
+  padding-top: 111px;
+  background-image: url(../img/content/welcome-bg.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .welcome {
+    padding-top: 100px;
+    height: 480px;
+    overflow: hidden;
+    background-position: 80% 0;
+  }
+}
+
+@media (max-width: 398px) {
+  .welcome {
+    height: 400px;
+  }
+}
+
+.welcome .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 32px;
+}
+
+.welcome_content {
+  max-width: 560px;
+  margin-top: 42px;
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .welcome_content {
+    max-width: 437px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .welcome_content {
+    z-index: 10;
+    max-width: 381px;
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome_content {
+    margin-top: 0;
+  }
+}
+
+.welcome_h2 {
+  margin-bottom: 26px;
+}
+
+@media (max-width: 1095px) {
+  .welcome_h2 {
+    margin-bottom: 15px;
+  }
+}
+
+.welcome_desc {
+  max-width: 520px;
+  width: 100%;
+  color: #301d28;
+  line-height: 23.8px;
+  font-size: 18px;
+}
+
+@media (max-width: 1280px) {
+  .welcome_desc {
+    max-width: 380px;
+    font-size: 14px;
+    line-height: 18.51px;
+  }
+}
+
+@media (max-width: 398px) {
+  .welcome_desc {
+    max-width: 284px;
+    font-size: 12px;
+    line-height: 15.2px;
+  }
+}
+
+.welcome_desc p {
+  margin: 0;
+}
+
+.welcome_desc b {
+  font-weight: 600;
+}
+
+.welcome_button {
+  margin-top: 37px;
+}
+
+@media (max-width: 1280px) {
+  .welcome_button {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .welcome_button {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 398px) {
+  .welcome_button {
+    margin-top: 17px;
+  }
+}
+
+.welcome_imgs {
+  max-width: 597px;
+  width: 100%;
+  height: 530px;
+}
+
+@media (max-width: 1280px) {
+  .welcome_imgs {
+    max-width: 396px;
+    height: 352px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .welcome_imgs {
+    position: absolute;
+    right: -20px;
+    max-width: 303px;
+    height: 309px;
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome_imgs {
+    max-width: 300px;
+    height: 205px;
+  }
+}
+
+@media (max-width: 398px) {
+  .welcome_imgs {
+    max-width: 192px;
+    height: 143px;
+  }
+}
+
+.welcome_img {
+  max-width: 100%;
+}
+
+@media (max-width: 1095px) {
+  .welcome_img {
+    overflow: hidden;
+  }
+}
+
+.welcome_img img {
+  display: block;
+  max-width: 100%;
+}
+
+.welcome_img._ball {
+  position: absolute;
+  top: 18px;
+  left: -2px;
+}
+
+@media (max-width: 1280px) {
+  .welcome_img._ball {
+    width: 58px;
+    height: 59px;
+  }
+  .welcome_img._ball img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1095px) {
+  .welcome_img._ball {
+    left: 22px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome_img._ball {
+    bottom: -53px;
+    top: auto;
+    left: -25px;
+    height: 41px;
+    width: 41px;
+  }
+}
+
+@media (max-width: 398px) {
+  .welcome_img._ball {
+    bottom: -55px;
+    left: -50px;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .welcome_img._doggo {
+    position: absolute;
+    top: 40px;
+    max-width: none;
+    width: 329px;
+    height: 285px;
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome_img._doggo {
+    top: 100px;
+    right: -10px;
+    height: 283px;
+    width: 280px;
+  }
+}
+
+@media (max-width: 398px) {
+  .welcome_img._doggo {
+    top: 120px;
+    right: 10px;
+    height: 203px;
+    width: 200px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
+\
